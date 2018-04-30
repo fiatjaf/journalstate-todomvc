@@ -1,35 +1,7 @@
-# Framework Name • [TodoMVC](http://todomvc.com)
+Write the facts on a plaintext format, they are parsed by custom rules (defined in [js/app.js](js/app.js#L59-L119)) and a state is generated. We use that final state to render the todomvc UI on the right.
 
-> Official description of the framework (from its website)
+![](screenshot.png)
 
+Try it on https://journalstate-todomvc.alhur.es/
 
-## Resources
-
-- [Website]()
-- [Documentation]()
-- [Used by]()
-- [Blog]()
-- [FAQ]()
-
-### Articles
-
-- [Interesting article]()
-
-### Support
-
-- [Stack Overflow](http://stackoverflow.com/questions/tagged/__)
-- [Google Groups]()
-- [Twitter](http://twitter.com/__)
-- [Google+]()
-
-*Let us [know](https://github.com/tastejs/todomvc/issues) if you discover anything worth sharing.*
-
-
-## Implementation
-
-How was the app created? Anything worth sharing about the process of creating the app? Any spec violations?
-
-
-## Credit
-
-Created by [Your Name](http://your-website.com)
+Currently this only works in Chrome because we're reusing the todomvc stylesheets and they define rules for `body`, thus we're putting the todomvc UI inside a shadow DOM, which is unsupported by Firefox yet.

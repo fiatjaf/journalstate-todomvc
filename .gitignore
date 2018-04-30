@@ -1,3 +1,4 @@
 node_modules
 browserify-cache.json
 bundle.js
+.netlify
